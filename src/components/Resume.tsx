@@ -10,8 +10,8 @@ const Resume: React.FC = () => {
   });
 
   const handleDownload = () => {
-    // In a real implementation, this would download the actual PDF
-    console.log('Downloading resume...');
+    // Open resume in new tab
+    window.open('https://drive.google.com/file/d/1a1YVxnL82uDOoPlbWE_G-VoIHvFX7bDa/view?usp=sharing', '_blank');
   };
 
   return (
@@ -43,16 +43,13 @@ const Resume: React.FC = () => {
               className="relative"
             >
               <div className="bg-white dark:bg-gray-700 rounded-xl shadow-lg p-8 border-2 border-[#875ef4] border-opacity-20">
-                <div className="aspect-[8.5/11] bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-600 dark:to-gray-700 rounded-lg flex items-center justify-center">
-                  <div className="text-center">
-                    <FileText className="w-24 h-24 text-[#875ef4] mx-auto mb-4" />
-                    <p className="text-lg font-semibold text-gray-700 dark:text-gray-300 font-mono">
-                      Paridhi Bhardwaj
-                    </p>
-                    <p className="text-sm text-gray-500 dark:text-gray-400 font-mono">
-                      DevOps Engineer & AI/ML Enthusiast
-                    </p>
-                  </div>
+                <div className="aspect-[8.5/11] bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-600 dark:to-gray-700 rounded-lg overflow-hidden">
+                  <iframe
+                    src="https://drive.google.com/file/d/1a1YVxnL82uDOoPlbWE_G-VoIHvFX7bDa/preview"
+                    className="w-full h-full border-0"
+                    title="Resume Preview"
+                    allow="autoplay"
+                  />
                 </div>
               </div>
               
@@ -60,7 +57,8 @@ const Resume: React.FC = () => {
               <motion.div
                 animate={{ y: [0, -10, 0] }}
                 transition={{ duration: 3, repeat: Infinity }}
-                className="absolute -top-4 -right-4 w-16 h-16 bg-[#875ef4] rounded-full flex items-center justify-center text-white shadow-lg"
+                className="absolute -top-4 -right-4 w-16 h-16 bg-[#875ef4] rounded-full flex items-center justify-center text-white shadow-lg cursor-pointer"
+                onClick={() => window.open('https://drive.google.com/file/d/1a1YVxnL82uDOoPlbWE_G-VoIHvFX7bDa/view?usp=sharing', '_blank')}
               >
                 <Eye className="w-8 h-8" />
               </motion.div>

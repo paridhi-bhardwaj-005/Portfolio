@@ -3,6 +3,13 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Github, ExternalLink, Filter, Star } from 'lucide-react';
 import { projects } from '../data/projects';
+import testImg from '../assets/test.webp';
+import aiImg from '../assets/ai.avif';
+
+const imageMap: Record<string, string> = {
+  test: testImg,
+  ai: aiImg,
+};
 
 const Projects: React.FC = () => {
   const [ref, inView] = useInView({
@@ -80,7 +87,7 @@ const Projects: React.FC = () => {
               transition={{ duration: 0.6, delay: 0.4 + index * 0.1 }}
               onMouseEnter={() => setHoveredProject(project.id)}
               onMouseLeave={() => setHoveredProject(null)}
-              className="group relative"
+              className="group relative h-full"
             >
               <motion.div
                 whileHover={{ 
@@ -88,7 +95,7 @@ const Projects: React.FC = () => {
                   rotateY: 5,
                   rotateX: 5,
                 }}
-                className="bg-white dark:bg-gray-700 rounded-xl shadow-lg overflow-hidden border-2 border-transparent hover:border-[#875ef4] transition-all duration-300"
+                className="bg-white dark:bg-gray-700 rounded-xl shadow-lg overflow-hidden border-2 border-transparent hover:border-[#875ef4] transition-all duration-300 h-full flex flex-col"
                 style={{
                   transformStyle: 'preserve-3d',
                 }}
@@ -111,7 +118,7 @@ const Projects: React.FC = () => {
                 {/* Project Image */}
                 <div className="relative overflow-hidden h-48">
                   <img
-                    src={project.image}
+                    src={imageMap[project.image] || project.image}
                     alt={project.name}
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                   />
@@ -136,16 +143,16 @@ const Projects: React.FC = () => {
                 </div>
 
                 {/* Project Content */}
-                <div className="p-6">
+                <div className="p-6 flex-1 flex flex-col">
                   <h3 className="text-xl font-bold text-[#240577] dark:text-white mb-2 font-mono">
                     {project.name}
                   </h3>
-                  <p className="text-gray-600 dark:text-gray-400 mb-4 font-mono text-sm leading-relaxed">
+                  <p className="text-gray-600 dark:text-gray-400 mb-4 font-mono text-sm leading-relaxed flex-1">
                     {project.description}
                   </p>
 
                   {/* Tech Stack */}
-                  <div className="flex flex-wrap gap-2 mb-4">
+                  <div className="flex flex-wrap gap-2 mb-4 flex-shrink-0">
                     {project.techStack.map((tech, idx) => (
                       <span
                         key={idx}
@@ -164,7 +171,7 @@ const Projects: React.FC = () => {
                       y: hoveredProject === project.id ? 0 : 20
                     }}
                     transition={{ duration: 0.3 }}
-                    className="flex space-x-4"
+                    className="flex space-x-4 flex-shrink-0"
                   >
                     <motion.a
                       href={project.githubUrl}
@@ -199,7 +206,7 @@ const Projects: React.FC = () => {
       </div>
 
       {/* CSS for gradient animation */}
-      <style jsx>{`
+      <style>{`
         @keyframes gradient-flow {
           0% { background-position: 0% 50%; }
           50% { background-position: 100% 50%; }

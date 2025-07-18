@@ -4,88 +4,61 @@ export const experiences: Experience[] = [
   // Education
   {
     type: 'education',
-    title: 'Bachelor of Technology in Computer Science',
-    organization: 'Indian Institute of Technology',
-    duration: '2021 - 2025',
+    title: 'Higher Secondary School',
+    organization: 'Maheshwari Girls Public School',
+    duration: '2021 - 2023',
     description: [
-      'Specialized in Software Engineering and DevOps practices',
-      'Relevant coursework: Data Structures, Algorithms, Cloud Computing, Machine Learning',
-      'GPA: 8.5/10.0'
+      'Science stream with Mathematics'
     ]
   },
   {
     type: 'education',
-    title: 'Higher Secondary School',
-    organization: 'Delhi Public School',
-    duration: '2019 - 2021',
+    title: 'Bachelor of Technology',
+    organization: 'Jaipur Engineering College And Research Centre Jaipur',
+    duration: '2023 - 2027',
     description: [
-      'Science Stream with Mathematics and Computer Science',
-      'Percentage: 95.2%',
-      'Head of Computer Science Club'
+      'Electronics And Communication Engineering',
+      'GPA: 8.5'
     ]
   },
   
   // Certifications
   {
     type: 'certification',
-    title: 'AWS Certified Solutions Architect',
-    organization: 'Amazon Web Services',
+    title: 'Linux Essentials Workshop',
+    organization: 'LinuxWorld Informatics Pvt. Ltd.',
     duration: '2024',
     description: [
-      'Comprehensive understanding of AWS services and architecture',
-      'Expertise in designing scalable and secure cloud solutions'
+      'Mentor: Mr. Vimal Daga'
     ],
-    skills: ['AWS', 'Cloud Architecture', 'Security', 'Scalability'],
-    verificationUrl: 'https://credly.com'
+    skills: ['REDHAT LINUX 9'],
+    verificationUrl: 'https://drive.google.com/file/d/1QGVUXvG9nGwuJDAZnDX6fIgIy8Qw3OdZ/view?usp=sharing'
   },
   {
     type: 'certification',
-    title: 'Google Cloud Professional DevOps Engineer',
-    organization: 'Google Cloud',
-    duration: '2024',
+    title: 'Kubernetes Foundation Training',
+    organization: 'LinuxWorld Informatics Pvt. Ltd.',
+    duration: '2025',
     description: [
-      'Advanced DevOps practices on Google Cloud Platform',
-      'CI/CD pipeline design and implementation'
+      'Mentor: Mr. Vimal Daga'
     ],
-    skills: ['GCP', 'CI/CD', 'DevOps', 'Kubernetes'],
-    verificationUrl: 'https://credly.com'
-  },
-  {
-    type: 'certification',
-    title: 'Red Hat Certified System Administrator',
-    organization: 'Red Hat',
-    duration: '2023',
-    description: [
-      'Linux system administration and automation',
-      'Container orchestration with Red Hat OpenShift'
-    ],
-    skills: ['Linux', 'Red Hat', 'OpenShift', 'Containers'],
-    verificationUrl: 'https://credly.com'
+    skills: ['Kubernetes'],
+    verificationUrl: 'https://drive.google.com/file/d/1c9eBSw_DQGiscvUkctl4L_NTBY0we7Lh/view?usp=drive_link'
   },
   
   // Work Experience
   {
     type: 'work',
-    title: 'DevOps Engineering Intern',
-    organization: 'TechCorp Solutions',
-    duration: 'Jun 2024 - Present',
+    title: 'Technical Intern',
+    organization: 'LinuxWorld Informatics Pvt. Ltd.',
+    duration: 'Jun 2025 - Aug 2025',
     description: [
-      'Implemented automated CI/CD pipelines reducing deployment time by 60%',
-      'Managed cloud infrastructure for 50+ microservices',
-      'Developed monitoring and alerting systems using Prometheus and Grafana'
+      'Worked on real-world projects involving machine learning and cloud infrastructure.',
+      'Developed and deployed fullstack applications leveraging AWS services.',
+      'Built and managed containerized environments using Docker and Kubernetes.',
+      'Implemented CI/CD pipelines with Jenkins for automated deployments.',
+      'Created and deployed AI solutions using Flask, GenAI, and Agentic AI frameworks.'
     ],
-    skills: ['Jenkins', 'Docker', 'Kubernetes', 'AWS', 'Terraform']
-  },
-  {
-    type: 'work',
-    title: 'AI/ML Research Assistant',
-    organization: 'University Research Lab',
-    duration: 'Jan 2024 - May 2024',
-    description: [
-      'Developed machine learning models for predictive analytics',
-      'Published research on automated code generation using LLMs',
-      'Collaborated with cross-functional teams on AI integration projects'
-    ],
-    skills: ['Python', 'TensorFlow', 'OpenAI', 'Research', 'Machine Learning']
+    skills: ['ML', 'AWS', 'Fullstack', 'Docker', 'Kubernetes', 'Jenkins CI/CD', 'Flask', 'GenAI', 'Agentic AI']
   }
 ];

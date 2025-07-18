@@ -11,7 +11,7 @@ import Projects from './components/Projects';
 import Blog from './components/Blog';
 import Resume from './components/Resume';
 import Contact from './components/Contact';
-import Testimonials from './components/Testimonials';
+
 import Footer from './components/Footer';
 
 function App() {
@@ -76,7 +76,6 @@ function App() {
               <Projects />
               <Blog />
               <Resume />
-              <Testimonials />
               <Contact />
             </main>
             <Footer />

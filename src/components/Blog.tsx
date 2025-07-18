@@ -170,7 +170,6 @@ const Blog: React.FC = () => {
                   <TrendingUp className="w-4 h-4" />
                 </motion.div>
               </div>
-
               {/* Progress Bar (simulated) */}
               <div className="h-1 bg-gray-200 dark:bg-gray-700">
                 <motion.div

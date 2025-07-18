@@ -112,20 +112,22 @@ const Home: React.FC = () => {
             transition={{ delay: 0.6 }}
             className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start"
           >
-            <motion.button
+            <motion.a
+              href="#projects"
               whileHover={{ scale: 1.05, boxShadow: '0 0 20px #875ef4' }}
               whileTap={{ scale: 0.95 }}
-              className="px-8 py-4 bg-[#875ef4] text-white rounded-lg font-semibold hover:bg-[#6b46c1] transition-colors font-mono"
+              className="px-8 py-4 bg-[#875ef4] text-white rounded-lg font-semibold hover:bg-[#6b46c1] transition-colors font-mono cursor-pointer text-center"
             >
               View My Work
-            </motion.button>
-            <motion.button
+            </motion.a>
+            <motion.a
+              href="#contact"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="px-8 py-4 border-2 border-[#875ef4] text-[#875ef4] rounded-lg font-semibold hover:bg-[#875ef4] hover:text-white transition-colors font-mono"
+              className="px-8 py-4 border-2 border-[#875ef4] text-[#875ef4] rounded-lg font-semibold hover:bg-[#875ef4] hover:text-white transition-colors font-mono cursor-pointer text-center"
             >
               Get In Touch
-            </motion.button>
+            </motion.a>
           </motion.div>
         </motion.div>
 

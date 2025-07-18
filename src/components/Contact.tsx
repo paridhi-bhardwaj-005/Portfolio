@@ -48,8 +48,15 @@ const Contact: React.FC = () => {
 
     setIsSubmitting(true);
     
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 2000));
+    // Create email content with form data
+    const subject = `Portfolio Contact from ${formData.name}`;
+    const body = `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`;
+    
+    // Create mailto link
+    const mailtoLink = `mailto:paridhi2005bhardwaj@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    
+    // Open email client
+    window.location.href = mailtoLink;
     
     setIsSubmitting(false);
     setIsSubmitted(true);
@@ -81,13 +88,13 @@ const Contact: React.FC = () => {
     {
       icon: Phone,
       label: 'Phone',
-      value: '+91 XXXXX XXXXX',
-      href: 'tel:+91XXXXXXXXX'
+      value: '+91 6376196968',
+      href: 'tel:+916376196968'
     },
     {
       icon: MapPin,
       label: 'Location',
-      value: 'New Delhi, India',
+      value: 'Jaipur, Rajasthan, India',
       href: null
     }
   ];

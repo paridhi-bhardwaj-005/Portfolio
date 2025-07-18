@@ -3,38 +3,29 @@ import { BlogPost } from '../types';
 export const blogPosts: BlogPost[] = [
   {
     id: '1',
-    title: 'Building Scalable CI/CD Pipelines with Jenkins and Docker',
-    excerpt: 'Learn how to create robust CI/CD pipelines that can handle enterprise-scale deployments with automated testing and monitoring.',
-    date: '2024-01-15',
-    readTime: '8 min read',
-    tags: ['Jenkins', 'Docker', 'CI/CD', 'DevOps'],
-    slug: 'scalable-cicd-pipelines'
+    title: 'Developing a Menu-Driven Python Automation Tool: One Program to Rule Them All',
+    excerpt: 'A hands-on guide to building a Python automation tool that can send emails, SMS, make phone calls, and post on social media—all from a single menu-driven script. Learn how modular Python code can streamline your daily workflow.',
+    date: 'July 6, 2025',
+    readTime: '',
+    tags: [],
+    slug: 'https://www.linkedin.com/pulse/developing-menu-driven-python-automation-tool-one-program-bhardwaj-afvgc/?trackingId=rYfOBIMQrKFYOpFdzzTrZQ%3D%3D'
   },
   {
     id: '2',
-    title: 'Infrastructure as Code: Terraform Best Practices',
-    excerpt: 'Comprehensive guide to managing cloud infrastructure using Terraform with real-world examples and best practices.',
-    date: '2024-01-08',
-    readTime: '12 min read',
-    tags: ['Terraform', 'AWS', 'Infrastructure', 'Cloud'],
-    slug: 'terraform-best-practices'
+    title: 'Exploring the Power of Linux Beyond the GUI',
+    excerpt: 'Discover the true potential of Linux by going beyond the graphical interface. This blog explores powerful command-line tools, automation, and system management tips for maximizing productivity on Linux.',
+    date: 'July 14, 2025',
+    readTime: '',
+    tags: [],
+    slug: 'https://www.linkedin.com/pulse/exploring-power-linux-beyond-gui-paridhi-bhardwaj-mqtsc/?trackingId=b6AR3iPcpmiLoYd3D4oHIw%3D%3D'
   },
   {
     id: '3',
-    title: 'Kubernetes Deployment Strategies for High Availability',
-    excerpt: 'Deep dive into various Kubernetes deployment strategies and how to achieve 99.9% uptime for your applications.',
-    date: '2024-01-01',
-    readTime: '10 min read',
-    tags: ['Kubernetes', 'DevOps', 'High Availability', 'Deployment'],
-    slug: 'kubernetes-deployment-strategies'
-  },
-  {
-    id: '4',
-    title: 'Monitoring Microservices with Prometheus and Grafana',
-    excerpt: 'Complete tutorial on setting up comprehensive monitoring for microservices architecture with alerting and dashboards.',
-    date: '2023-12-25',
-    readTime: '15 min read',
-    tags: ['Prometheus', 'Grafana', 'Monitoring', 'Microservices'],
-    slug: 'monitoring-microservices'
+    title: 'Unlocking Docker’s Full Potential: Running Anything and Everything Inside Containers',
+    excerpt: 'Learn how to leverage Docker to run a wide variety of applications in isolated containers. This article covers advanced Docker concepts, real-world use cases, and tips for maximizing container efficiency.',
+    date: 'July 17, 2025',
+    readTime: '',
+    tags: [],
+    slug: 'https://www.linkedin.com/pulse/unlocking-dockers-full-potential-running-anything-inside-bhardwaj-rvouc/?trackingId=CdpMPGX0SkrxtiL1jJ%2B8Xw%3D%3D'
   }
 ];
